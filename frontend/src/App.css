@@ -1,0 +1,45 @@
+.css-19kzrtu{
+  padding: 0 !important;
+}
+
+form{
+  max-width: 500px;
+    width: 100%;
+    margin: 15px auto 30px;
+}
+.row-form{
+      display: flex;
+    margin-bottom: 15px;
+}
+
+.row-form label{
+      flex: 0 0 34%;
+    margin-right: 1%;
+}
+.row-form input{
+  flex: 0 0 65%;
+    padding: 8px 15px;
+}
+
+.btn{
+      display: block;
+    margin: 15px auto;
+    background: #1d2756;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.panel__option {
+    padding: 40px 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.panel__option:nth-child(2n){
+  background: #f7f7f7;
+}
+
