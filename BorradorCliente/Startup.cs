@@ -33,8 +33,8 @@ namespace Prueba
             services.AddMvc();
 
             services.AddControllers();
-            services.AddTransient<IEstudianteLogic, EstudianteLogic>();
-            services.AddSingleton<IEstudianteDB, EstudianteDB>();
+            services.AddTransient<IClienteLogic, ClienteLogic>();
+            services.AddSingleton<IClienteDB, ClienteDB>();
 
             services.AddTransient<IOrdenTrabajoLogic, OrdenTrabajoLogic>();
             services.AddSingleton<IOrdenTrabajoDB, OrdenTrabajoDB>();
@@ -50,12 +50,12 @@ namespace Prueba
 
                 options.SwaggerDoc(groupName, new OpenApiInfo
                 {
-                    Title = $"Estudiantes {groupName}",
+                    Title = $"Clientes {groupName}",
                     Version = groupName,
-                    Description = "API Estudiante",
+                    Description = "API Cliente",
                     Contact = new OpenApiContact
                     {
-                        Name = "Estudiantes",
+                        Name = "Clientes",
                         Email = string.Empty,
                         Url = new Uri("https://foo.com/"),
                     }
